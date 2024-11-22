@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" class="consultas_html">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tus Derechos</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cabin+Sketch:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="consultas_body">
+
+    <header>
+
+        <a href="index.html" class="logo_index"> <img src="fotos/logotipo.png" class="logo"
+                alt="Logotipo Pan y Teatro"></a>
+        <a href="tus_derechos.html" class="tus_derechos">Tus derechos</a>
+        <a href="historia.html" class="historia">Historia</a>
+        <a href="propuestas.html" class="propuestas">Propuestas</a>
+        <a href="quienes_somos.html" class="quienes_somos">¿Quiénes somos?</a>
+
+        <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Pagina Principal</a>
+            <a href="tus_derechos.html">Tus Derechos</a>
+            <a href="historia.html">Historia</a>
+            <a href="propuestas.html">Propuestas</a>
+            <a href="quienes_somos.html">Quienes Somos</a>
+        </div>
+
+        <button class="openbtn" onclick="openNav()"><img class="menu_boton" src="fotos/menu_boton.png"></button>
+
+    </header>
+
+    <main class="consultas_main">
+
+        <div class="titulo_y_telones">
+            <img class="telon_izquierdo" src="fotos/telon.png" alt="Telón">
+            <div class="div_index_logo">
+                <img class="main_logo" src="fotos/consulta_titulo.png" alt="Logo consultas" title="Pan y Teatro">
+            </div>
+            <img class="telon_derecho" src="fotos/telon.png" alt="Telón">
+        </div>
+        <div class="grilla_consultas">
+            <div class="columna_div"><img src="fotos/columna.png" class="columna"></div>
+            <img src="fotos/escaleras.png" class="escalera">
+
+            <div class="informacion">
+                <div id="div_consulta_nombre">
+                    <p>Nombre</p>
+                    <input id="nombre">
+                </div>
+                <div id="div_consulta_apellido">
+                    <p>Apellido</p>
+                    <input id="apellido">
+                </div>
+                <div id="div_consulta_vocacion">
+                    <p>Vocación</p>
+                    <input id="vocacion">
+                </div>
+                <div id="div_consulta">
+                    <p>Consulta</p>
+                    <input id="consulta">
+                </div>
+
+                <div class="div_boton_consulta">
+                    <button type="button" onclick="enviarConsulta()" class="boton_consulta"> Enviar Consulta</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="script.js"></script>
+
+<footer>
+    <div class="footer">
+        <p>Página creada por Francisco Picca, Martina Sandri y Tomás Clur</p>
+    </div>
+</footer>
+
+</html>
